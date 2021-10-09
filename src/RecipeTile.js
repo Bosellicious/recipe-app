@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./RecipeTile.css";
 
 export default function RecipeTile({ recipe }) {
@@ -6,8 +6,8 @@ export default function RecipeTile({ recipe }) {
     recipe["recipe"]["image"].match(/\.(jpeg|jpg|gif|png)$/) != null && (
       <div
         className="recipeTile">
-        <img className="recipeTile__img" src={recipe["recipe"]["image"]} />
-        <p className="recipeTile__name">{recipe["recipe"]["label"]}
+        <img className="recipeTile_img" alt="recipe image" src={recipe["recipe"]["image"]} />
+        <p className="recipeTile_name">{recipe["recipe"]["label"]}
         </p>
       </div>
     )
