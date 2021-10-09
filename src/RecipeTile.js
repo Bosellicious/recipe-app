@@ -6,7 +6,7 @@ export default function RecipeTile({ recipe }) {
     recipe["recipe"]["image"].match(/\.(jpeg|jpg|gif|png)$/) != null && (
       <div
         className="recipeTile">
-        <img className="recipeTile_img" alt="recipe image" src={recipe["recipe"]["image"]} />
+        <img className="recipeTile_img" alt="recipe" src={recipe["recipe"]["image"]} />
         <p className="recipeTile_name">{recipe["recipe"]["label"]}
         </p>
       </div>
