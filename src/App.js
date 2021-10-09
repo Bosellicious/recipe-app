@@ -1,7 +1,7 @@
 import "./App.css";
 import Axios from "axios";
 import { useState } from "react";
-import RecipeTile from "./Recipe-tile";
+import RecipeTile from "./RecipeTile";
 
 function App() {
   const [query, setquery] = useState("");
